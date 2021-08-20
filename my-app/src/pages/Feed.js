@@ -3,6 +3,7 @@ import { Image } from 'react-native';
 import { Container, Content, Card, CardItem, Thumbnail, Input, Text, Button, Icon, Left, Body, Right, Header, Item } from 'native-base';
 import { createMaterialBottomTabNavigator } from '@react-navigation/material-bottom-tabs';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
+import { WebView } from 'react-native-webview';
 
 import styles from '../styles/Feed';
 
@@ -26,13 +27,14 @@ function Feed() {
           <CardItem>
             <Left>
               <Button transparent>
-                <Text>Eventos</Text>
+                <Text>Fotos</Text>
+                <Icon active name="camera-outline" />
               </Button>
             </Left>
             <Body>
               <Button transparent>
-                <Icon active name="camera-outline" />
-                <Text>Fotos</Text>
+                <Text>Downl.</Text>
+                <Icon active name="download-outline" />
               </Button>
             </Body>
             <Right>
@@ -53,19 +55,20 @@ function Feed() {
               </Body>
             </Left>
           </CardItem>
-          <CardItem cardBody>
-            <Text style={styles.text}>https://www.facebook.com/watch/?v=882498028831966  Componente WebView está crashando o app</Text>
+          <CardItem>
+            <WebView style={styles.image} source={{ uri: 'https://video.xx.fbcdn.net/v/t42.9040-2/81675908_2583297988624115_8933104493290061824_n.mp4?_nc_cat=102&ccb=1-5&_nc_sid=985c63&efg=eyJybHIiOjUzNCwicmxhIjo1MTIsInZlbmNvZGVfdGFnIjoic3ZlX3NkIn0%3D&_nc_ohc=V8Uv-cGMCaoAX_S9Wdc&rl=534&vabr=297&_nc_ht=video-lga3-1.xx&edm=AGo2L-IEAAAA&oh=b6d4d40041ec4a3ad2840979415cd2d4&oe=611DA7D4'}}  />
           </CardItem>
           <CardItem>
             <Left>
               <Button transparent>
                 <Text>Eventos</Text>
+                <Icon active name="today-outline" />
               </Button>
             </Left>
             <Body>
               <Button transparent>
-                <Icon active name="videocam-outline" />
-                <Text>Vídeos</Text>
+                <Text>Downl.</Text>
+                <Icon active name="download-outline" />
               </Button>
             </Body>
             <Right>
@@ -86,19 +89,26 @@ function Feed() {
               </Body>
             </Left>
           </CardItem>
+          <CardItem>
+            <Text style={styles.text}>CDPC | Poços conta agora com Centro de Divulgação e Popularização da Ciência</Text>
+          </CardItem>
           <CardItem cardBody>
-            <Text style={styles.text}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla in interdum turpis. Cras sit amet mi vitae odio ultricies bibendum. Integer vulputate tempus tortor.</Text>
+            <Image source={{ uri: 'https://pocosdigital.com/wp-content/uploads/2019/12/cdpc-inauguração-fachada-01-696x529.jpeg' }} style={styles.image} />
+          </CardItem>
+          <CardItem>
+            <Text style={styles.text}>Desde a última sexta-feira (13), Poços de Caldas conta com o Centro de Divulgação e Popularização da Ciência (CDPC), instalado no prédio do campus do Instituto Federal do Sul de Minas, no Jardim Esperança, na zona sul, em parceria com a Autarquia Municipal de Ensino. Durante a solenidade de inauguração, foi assinado o termo de cessão dos equipamentos adquiridos pela AME ao IFSULDEMINAS, com investimentos de aproximadamente R$ 98 mil.</Text>
           </CardItem>
           <CardItem>
             <Left>
               <Button transparent>
                 <Text>Info</Text>
+                <Icon active name="megaphone-outline" />
               </Button>
             </Left>
             <Body>
               <Button transparent>
-                <Icon active name="newspaper-outline" />
-                <Text>Notícias</Text>
+                <Text>Downl.</Text>
+                <Icon active name="download-outline" />
               </Button>
             </Body>
             <Right>
@@ -126,12 +136,13 @@ function Feed() {
             <Left>
               <Button transparent>
                 <Text>Eventos</Text>
+                <Icon active name="today-outline" />
               </Button>
             </Left>
             <Body>
               <Button transparent>
-                <Icon active name="camera-outline" />
-                <Text>Fotos</Text>
+                <Text>Downl.</Text>
+                <Icon active name="download-outline" />
               </Button>
             </Body>
             <Right>

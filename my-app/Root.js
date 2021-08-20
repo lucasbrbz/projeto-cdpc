@@ -4,7 +4,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 
 import Index from './src/pages/Index';
 import Feed from './src/pages/Feed';
-import Cadastro from "./src/pages/Cadastro";
+import Contato from "./src/pages/Contato";
 
 const Stack = createStackNavigator();
 
@@ -29,10 +29,10 @@ function RootStack() {
                     }}
                 />
                 <Stack.Screen
-                    name="Cadastro"
-                    component={Cadastro}
+                    name="Contato"
+                    component={Contato}
                     initialParams={{ user: 'me' }}
-                    options={{ title: 'Cadastro' }}
+                    options={{ title: 'Contato' }}
                 />
             </Stack.Navigator>
         </NavigationContainer>

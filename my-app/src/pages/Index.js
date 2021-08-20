@@ -5,15 +5,6 @@ import styles from '../styles/Index';
 
 export default class Index extends React.Component {
 
-    static navigationOptions = {
-        title: 'User',
-    };
-
-    state = {
-        email: '',
-        senha: ''
-    }
-
     render() {
 
         const { navigation } = this.props;
@@ -23,7 +14,7 @@ export default class Index extends React.Component {
                 <Content>
                     <View style={styles.container}>
                         <Image style={styles.image}
-                            source={require('../assets/logo.jpeg')}
+                            source={require('../assets/LOGO_CDPC_FINAL_2.png')}
                         />
                         <Text style={styles.textNovaConta}>Bem vindo(a) ao app do CDPC!</Text>
                         <Button full rounded bordered light style={styles.button} onPress={() => navigation.navigate('Feed')}>

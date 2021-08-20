@@ -27,7 +27,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     padding: hp('2%'),
     marginTop: hp('3%'),
-    backgroundColor: '#F8CC8F',
+    backgroundColor: '#359830',
     width: wp('82.5%'),
     marginLeft: hp('5%'),
   },
